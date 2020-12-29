@@ -1,0 +1,98 @@
+header{
+    width:100%;
+    height:800px;
+    position: relative;
+}
+.blur{
+    background-image:url(../../../assets/plaza-libertad.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    filter: blur(1.5px);
+}
+
+header .foto{
+    width:300px;
+    height:350px;
+    margin:auto;
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:250px;
+    border-radius:10px;
+    border:5px inset #fff;
+    background-image:url(../../../assets/noah.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+
+header .letras{
+    padding:0;
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:20px;
+}
+
+.letras h1{
+    font-family: "Poppins";
+    font-size: 100px;
+    font-style: bold;
+    color:#fff;
+    text-shadow:5px 5px 5px #000;
+    text-align: center;
+    margin: auto;
+    animation : type1 6s steps(14,end) forwards,blink 1s infinite;
+    overflow : hidden;
+    white-space : nowrap;
+    border-right : 4px solid #fff;
+    width:14ch;
+}
+
+.letras h3{
+    font-family: "Carta";
+    font-size: 70px;
+    font-style: bold;
+    top:50%;
+    color:#fff;
+    text-shadow:5px 5px 5px #000;
+    margin:auto;
+    padding:0px;
+    animation : type2 6s steps(35,end)forwards,blink 1s infinite;;
+    overflow : hidden;
+    white-space : nowrap;
+    border-right : 4px solid #fff;
+}
+
+
+/*Keyframes*/
+@keyframes type1 {
+    0% { 
+        width:0ch;
+    }
+    100% {
+         width:14ch;
+    }
+}
+@keyframes type2 {
+    0% { 
+        width:0ch;
+    }
+    100% {
+         width:35ch;
+    }
+}
+
+@keyframes blink {
+    0%,100% {
+      border-right:4px solid transparent;
+    }
+    50% {
+      border-right:4px solid #fff;
+    }
+}
