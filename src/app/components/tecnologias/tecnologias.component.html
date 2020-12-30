@@ -1,8 +1,9 @@
 <section class="tecno-contenedor">
+    <h1>Tecnologías que utilizo.</h1>
     <div class="tecno-web" *ngFor="let tipo of tecnologias;">
         <h1>{{tipo.name}}</h1>
-        <div class="contenedor-tecnologias" *ngFor="let tecnologia of tipo.herramientas;">
-            <mat-card class="cards">
+        <div class="contenedor-tecnologias">
+            <mat-card class="cards" *ngFor="let tecnologia of tipo.herramientas;">
                 <mat-card-header>
                     <mat-card-title>{{tecnologia.name}}</mat-card-title>
                     <mat-card-subtitle><b>Version:</b>  {{tecnologia.version}}</mat-card-subtitle>

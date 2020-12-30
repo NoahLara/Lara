@@ -1,22 +1,32 @@
 .tecno-contenedor{
     width:100%;
-    border:2px solid red;
 }
+.tecno-contenedor h1{
+    font-family: "Poppins";
+    font-size:50px;
+    text-align: center;
+}
+
+.tecno-contenedor h1::after {
+    content:'';
+    width:0px;
+    height:3px;
+    display:block;
+    background:#15743C;
+    transition:300ms;
+}
+
 .tecno-web{
     width:100%;
-    border:2px solid rgb(61, 145, 45);
 }
 .tecno-web h1{
     font-family: "Poppins";
-    font-size:50px;
+    font-size:30px;
 }
 .contenedor-tecnologias{
     display:flex;
-    flex-flow:row wrap;
+    flex-flow:row nowrap;
     justify-content: space-around;
-    align-items: center;
-    
-    border:2px solid rgb(224, 166, 39);
 }
 .cards{
     width:250px;
@@ -32,3 +42,5 @@
 .mat-progress-bar{
     height: 8px;
 }
+
+

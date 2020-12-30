@@ -34,9 +34,36 @@ export class TecnologiasComponent implements OnInit {
           name:"HTML",
           version:"5",
           logo:"../../../assets/html5.png",
-          color:"warn",
+          color:"primary",
           value:"90"
         },
+        
+        {
+          name:"AngularJs",
+          version:"9+",
+          logo:"../../../assets/angularjs.png",
+          color:"warn",
+          value:"70"
+        }
+      ]
+    },
+    {
+      name:"Diseño Gráfico",
+      herramientas:[
+        {
+          name:"Photoshop",
+          version:"CS6",
+          logo:"../../../assets/photoshop.jpg",
+          color:"primary",
+          value:"40"
+        },
+        {
+          name:"Illustrator",
+          version:"CS6",
+          logo:"../../../assets/illustrator.png",
+          color:"warn",
+          value:"50"
+        }
       ]
     }
     
