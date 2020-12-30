@@ -12,6 +12,7 @@ import { StudiesComponent } from './components/studies/studies.component';
 import { MaterialModule } from './material/material.module';
 import { MenuComponent } from './components/menu/menu.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
+import { TecnologiasComponent } from './components/tecnologias/tecnologias.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ProyectosComponent } from './components/proyectos/proyectos.component';
     HeaderComponent,
     StudiesComponent,
     MenuComponent,
-    ProyectosComponent
+    ProyectosComponent,
+    TecnologiasComponent
   ],
   imports: [
     BrowserModule,

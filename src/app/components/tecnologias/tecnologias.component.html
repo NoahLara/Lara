@@ -1,0 +1,19 @@
+<section class="tecno-contenedor">
+    <div class="tecno-web">
+        <h1>Tecnologias Web</h1>
+        <div class="contenedor-tecnologias" *ngFor="let tecnologia of tecnologias;">
+            <mat-card class="example-card">
+                <mat-card-header>
+                    <mat-card-title>{{tecnologia.name}}</mat-card-title>
+                    <mat-card-subtitle><b>Version:</b>  {{tecnologia.version}}</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image [src]="tecnologias.logo" alt="Imagen Tecnologia">
+                <mat-card-content>
+                    <p>
+                        {{tecnologias.descripcion}}
+                    </p>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+</section>
